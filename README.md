@@ -3,7 +3,7 @@ A Counter app to use it if you want to repeat anything and you want to know how 
 
 # Live Demo
 You can view the live demo of the project at 
-# [Counter APP LIVE](https://hassan-ghorab.github.io/CRUDS-Product-System-Management-Using-JavaScript/)
+# [Counter APP LIVE](https://hassan-ghorab.github.io/Simple-Counter-App/)
 
 # Technologies Used
 - HTML

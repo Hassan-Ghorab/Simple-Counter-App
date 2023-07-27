@@ -1,0 +1,126 @@
+:root {
+  --bg-color: #212028;
+  --btn-bg-color: rgb(249, 194, 92);
+  --border-color: hsl(39, 90%, 40%);
+  --gray-color: rgb(221, 221, 221);
+  --global-color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  background-color: var(--global-color);
+  padding: 1.5rem;
+  margin: 4rem 0 5rem;
+  border-radius: 1000px;
+}
+
+.inputs input {
+  width: 500px;
+  padding: 0.7rem;
+  margin-right: 2rem;
+  font-size: 1.1rem;
+  border-radius: 1000px;
+  border: 2px solid var(--gray-color);
+  outline: none;
+  transition: all 0.5s;
+}
+
+.inputs input:focus,
+.inputs input:hover,
+.inputs input:active {
+  border: 1px solid var(--border-color);
+}
+
+.submit {
+  width: 150px;
+  padding: 0.7rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--global-color);
+}
+
+.number {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--global-color);
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  color: var(--bg-color);
+  font-size: 1.1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1000px;
+  transition: all 0.5s;
+}
+
+.btn:focus,
+.btn:hover {
+  background-color: var(--border-color);
+  color: var(--global-color);
+  border: 1px solid var(--border-color);
+}
+
+.increase,
+.decrease {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+
+.decrease {
+  margin-right: 7rem;
+}
+
+.reset {
+  display: block;
+  padding: 0.7rem 2rem;
+  margin: 2rem auto;
+  border-radius: 1000px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .inputs input {
+    width: 250px;
+    padding: 0.7rem;
+    margin-right: 0;
+    border-radius: 1000px;
+    margin-bottom: 1rem;
+  }
+
+  .inputs .submit {
+    width: 250px;
+  }
+}

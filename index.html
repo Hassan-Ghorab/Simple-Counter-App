@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Counter app to use it if you want to repeat anything and you want to know how many times did you do it"
+    />
+    <link
+      id="favicon"
+      rel="icon"
+      sizes="100x100"
+      type="image/png"
+      href="./counter-favicon.png"
+    />
+    <title>Counter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs">
+        <input type="text" id="input-text" placeholder="Enter a word" />
+        <button id="submit" class="submit btn">Enter a word</button>
+      </div>
+
+      <h1 id="title" class="title">Counter</h1>
+
+      <h2 id="number" class="number">0</h2>
+
+      <div id="counter-btns" class="counter-btns">
+        <button id="decrease" class="decrease btn">-</button>
+        <button id="increase" class="increase btn">+</button>
+        <button id="reset" class="reset btn">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
